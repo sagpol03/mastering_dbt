@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: rawsource
+    database: SNOWFLAKE_LEARNING_DB  
+    schema: RAWDATA  
+    tables:
+      - name: ORDERITEMS1
+      - name: ORDERS1
+
+      - name: RAWCUSTOMERS1
+      - name: PAYMENTS1
+
+
+  - name: rawsource1
+    database: DBT  
+    schema: RAWDATA  
+    tables:
+      - name: RAWCUSTOMERS
+      - name: RAWORDERITEMS
+      - name: RAWORDERS
+      - name: RAWPAYMENTS
+      - name: RAWPRODUCTS
+         identifier:PROD
+      
