@@ -1,0 +1,9 @@
+select
+    PRODUCT_CODE as product_coder,
+	CUSTOMER_CODE as cust_code,
+	MARKET_CODE as mark_code,
+	ORDER_DATE,
+	SALES_QTY,
+	SALES_AMOUNT,
+	CURRENCY
+from DBT_DATABASE.DBT_PRACTICE.TRANSACTION
